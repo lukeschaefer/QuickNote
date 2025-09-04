@@ -16,7 +16,8 @@ function formatDateHeader(): string {
     day: 'numeric'
   };
   const formattedDate = today.toLocaleDateString('en-US', options);
-  return `${formattedDate}\n========================\n\n`;
+  const underline = '='.repeat(formattedDate.length);
+  return `${formattedDate}\n${underline}\n\n`;
 }
 
 // Debounce function
