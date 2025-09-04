@@ -23,7 +23,8 @@ export default defineConfig({
 			},
 			workbox: {
 				navigateFallback: '/index.html',
-				globPatterns: ['**/*.{js,css,html,svg,png,ico}']
+				globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
+				globIgnores: ['**/favicon.png']
 			}
 		})
 	]
