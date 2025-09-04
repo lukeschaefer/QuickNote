@@ -9,16 +9,16 @@ export default defineConfig({
 			registerType: 'autoUpdate',
 			injectRegister: 'auto',
 			manifest: {
-				name: 'breathe.zip',
-				short_name: 'breathe',
-				description: 'Box-breathing web app',
+				name: 'quicknote.zip',
+				short_name: 'quicknote',
+				description: 'Micro note taking web app',
 				theme_color: '#0ea5e9',
 				background_color: '#0b1020',
 				display: 'standalone',
 				start_url: '/',
 				scope: '/',
 				icons: [
-					{ src: '/vite.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }
+					{ src: '/favicon.png', sizes: 'any', type: 'image/png', purpose: 'any' }
 				]
 			},
 			workbox: {
